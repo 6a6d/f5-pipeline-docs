@@ -1,45 +1,29 @@
-F5 API Authentication
+Postman Configuration
 =====================
 
-In order to interact with the REST based API for both BIG-IP and BIG-IQ, authentication needs to occur.
+If not installed already, ensure that Postman 7.x is available on your local machine.
 
-Below are examples of how to authenticate against both BIG-IP and BIG-IQ using Postman and Curl.
+You will need to import the Postman collections for this lab in order to proceed.
 
-.. TODO:: Include curl example
+Importing Postman Collections
+-----------------------------
 
-BIG-IP API Authentication
--------------------------
+#. You will need to install the ``f5-postman-workflows`` framework into
+   Postman:
 
-.. code-block:: rest
-    :name: API auth url
+   #. Open Postman
 
-    https://{{big_ip_mgmt}}/mgmt/shared/authn/login
+   #. Click the 'Import' button
 
+   #. Select 'Import from Link'
 
-.. code-block:: json
-    :name: API auth payload
+   #. Enter the following URL in the field
+        #. ``https://github.com/6a6d/f5-pipeline/blob/master/Postman%20Collections/F5_AS3.json``
 
-    {
-        "username": "admin",
-        "password": "admin",
-        "loginProviderName": "tmos"
-    }
+   #. Click the 'Import' button
 
+   #. Repeat the import process for the additional collections found below
+        #. ``https://github.com/6a6d/f5-pipeline/blob/master/Postman%20Collections/F5_DO.json``
+        #. ``https://github.com/6a6d/f5-pipeline/blob/master/Postman%20Collections/F5_TS.json``
 
-BIG-IQ API Authentication
--------------------------
-
-.. code-block:: rest
-    :name: API auth url
-
-    https://{{big_iq_mgmt}}/mgmt/shared/authn/login
-
-
-.. code-block:: json
-    :name: API auth payload
-
-    {
-        "username": "admin",
-        "password": "admin",
-        "loginProviderName": "tmos"
-    }
+   #. Ensure that each of the above collections were successfully imported.

@@ -1,13 +1,8 @@
 Code Repository
 ===============
 
-
-Repository Location
--------------------
-
-Before starting this lab, please make sure to clone the below location for referance/use while working through the exercises.
-
-
+# Clone the below github repository before begging the lab.
+    # ``https://github.com/6a6d/f5-pipeline``
 
 Repository Layout
 -----------------
