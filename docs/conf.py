@@ -31,7 +31,7 @@ on_snops = os.environ.get('SNOPS_ISALIVE', None) == 'True'
 print "on_rtd = %s" % on_rtd
 print "on_snops = %s" % on_snops
 
-github_url = "https://github.com/6a6d/f5-ao-toolchain"
+github_url = "https://github.com/6a6d/f5-pipeline-docs"
 
 branch_map = {
     "stable":"master",
