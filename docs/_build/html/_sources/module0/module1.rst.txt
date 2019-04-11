@@ -1,0 +1,53 @@
+API Authentication
+==================
+
+
+BIG-IP API Authentication
+-------------------------
+
+.. code-block:: rest
+    :caption: POST
+    :name: API auth
+
+    https://{{big_ip_a_mgmt}}/mgmt/shared/authn/login
+
+.. code-block:: javascript
+    :caption: Postman Test
+
+    var jsonData = JSON.parse(responseBody);
+    pm.globals.set("_f5_token", jsonData.token.token);
+
+.. code-block:: json
+    :caption: Body
+
+    {
+        "username": "admin",
+        "password": "admin",
+        "loginProviderName": "tmos"
+    }
+
+
+BIG-IQ API Authentication
+-------------------------
+
+.. code-block:: rest
+    :caption: POST
+    :name: API auth
+
+    https://{{big_iq_mgmt}}/mgmt/shared/authn/login
+
+.. code-block:: javascript
+    :caption: Postman Test
+
+    var jsonData = JSON.parse(responseBody);
+    pm.globals.set("_f5_token", jsonData.token.token);
+
+.. code-block:: json
+    :caption: Body
+
+    {
+        "username": "admin",
+        "password": "admin",
+        "loginProviderName": "tmos"
+    }
+

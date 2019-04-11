@@ -1,0 +1,62 @@
+API Authentication
+==================
+
+In order to interact with the REST based API for both BIG-IP and BIG-IQ, authentication needs to occur.
+
+Below are examples of how to authenticate against both BIG-IP and BIG-IQ using Postman and Curl.
+
+
+.. TODO:: Include curl exmaple
+
+BIG-IP API Authentication
+-------------------------
+
+.. code-block:: rest
+    :caption: POST
+    :name: API auth
+
+    https://{{big_ip_1_mgmt}}/mgmt/shared/authn/login
+
+.. code-block:: javascript
+    :caption: Postman Test
+
+.. code-block:: json
+    :caption: Body
+
+    {
+        "username": "admin",
+        "password": "admin",
+        "loginProviderName": "tmos"
+    }
+
+.. code-block:: javascript
+    :caption: Postman Test
+    :name: TOKEN creation
+
+    var jsonData = JSON.parse(responseBody);
+    pm.globals.set("TOKEN", jsonData.token.token);
+
+BIG-IQ API Authentication
+-------------------------
+
+.. code-block:: rest
+    :caption: POST
+    :name: API auth
+
+    https://{{big_iq_mgmt}}/mgmt/shared/authn/login
+
+.. code-block:: json
+    :caption: Body
+
+    {
+        "username": "admin",
+        "password": "admin",
+        "loginProviderName": "tmos"
+    }
+
+.. code-block:: javascript
+    :caption: Postman Test
+    :name: TOKEN creation
+
+    var jsonData = JSON.parse(responseBody);
+    pm.globals.set("TOKEN", jsonData.token.token);

@@ -1,0 +1,98 @@
+Lab Topology
+============
+
+.. NOTE:: Work for this lab can be performed from either the Linux
+   Jumphost or your local workstation.
+
+All pre-built environments implement the Lab Topology shown below.  Please
+review the topology first, then find the section matching the lab environment
+you are using for connection instructions.
+
+.. _lab-topology:
+
+Lab Topology
+------------
+
+The network topology implemented for this lab is very simple. Since the
+focus of the lab is Control Plane programmability rather than Data Plane
+traffic flow we can keep the data plane fairly simple. The following
+components have been included in your lab environment:
+
+-  2 x F5 BIG-IP LTM VE (v13.1.x)
+-  1 x F5 BIG-IP GTM VE (v13.1.x)
+-  1 x Pipeline Server (Linux)
+-  1 x Web Host (Linux)
+-  1 x Jumphost (Linux)
+
+.. nwdiag:: labtopology.diag
+   :width: 800
+   :caption: Lab Topology
+   :name: lab-topology-diagram
+   :scale: 110%
+
+The following table lists VLANS, IP Addresses and Credentials for all components:
+
+.. list-table::
+   :widths: 15 30 30 30
+   :header-rows: 1
+   :stub-columns: 1
+
+
+   * - **Component**
+     - **Management IP**
+     - **VLAN/IP Address(es)**
+     - **Credentials**
+
+   * - BIG-IP (LTM 1)
+     - 10.1.1.4
+     - **Internal:** 10.1.20.4
+       **Internal (Float):** 0.0.0.0
+       **External:** 10.1.10.4
+       **External (VIPs):** 10.1.10.120-130
+
+     - ``admin/admin``
+       ``root/default``
+
+   * - BIG-IP (LTM 2)
+     - 10.1.1.5
+     - **Internal:** 10.1.20.5
+       **Internal (Float):** 0.0.0.0
+       **External:** 10.1.10.5
+       **External (VIPs):** 10.1.1.120-130
+
+     - ``admin/admin``
+       ``root/default``
+
+    * - BIG-IP (GTM)
+     - 10.1.1.6
+     - **Internal:** 10.1.20.6
+       **Internal (Float):** 0.0.0.0
+       **External:** 10.1.10.6
+       **External (VIPs):** 0.0.0.0
+
+     - ``admin/admin``
+       ``root/default``
+
+    * - Pipeline Server
+     - 10.1.1.7
+     - **External:** 10.1.20.20
+
+     - ``ubuntu/default``
+
+    * - Jumpbox
+     - 10.1.1.8
+     - ``ubuntu/default``
+
+    * - Web Host
+     - 10.1.1.9
+     - **Internal:** 10.1.20.21
+     
+     - ``ubuntu/default``
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   udf
+   self_built
+

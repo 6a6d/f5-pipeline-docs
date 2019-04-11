@@ -1,0 +1,32 @@
+.. _module0:
+
+Configuring Editor Environment
+==============================
+
+.. TODO:: List specific extensions that would be helpful.
+
+VS Code - Extensions
+---------------------
+
+
+
+
+
+To leverage the native IntelliSense (code completion) capabilities within VS Code and the Application Services Extension, you will need to download the correct AS3 schema file.
+
+The schema file can then be referenced in an AS3 declaration which will allow VS Code to perform code completion/schema validation functions in real time.
+
+Below is an example of a schema referance in such a declaration.
+
+
+.. code-block:: json
+    :name: Schema definition for IntelliSense
+
+    {
+        "$schema": "file:///Users/user/src/f5-appsvcs/src/schema/as3-tool-schema.json"
+    }
+
+.. NOTE::
+
+    There is a known issue with Pool_Member class inside the pool's member array.  This may show an error as VS Code doesn't seem to properly regonize the default value of addressDiscovery.  By filling in the value as "addressDiscovery": "static", the error goes away.
+
