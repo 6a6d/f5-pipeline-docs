@@ -1,62 +1,29 @@
-API Authentication
-==================
+Postman Configuration
+=====================
 
-In order to interact with the REST based API for both BIG-IP and BIG-IQ, authentication needs to occur.
+If not installed already, ensure that Postman 7.x is available on your local machine.
 
-Below are examples of how to authenticate against both BIG-IP and BIG-IQ using Postman and Curl.
+You will need to import the Postman collections for this lab in order to proceed.
 
+Importing Postman Collections
+-----------------------------
 
-.. TODO:: Include curl exmaple
+#. You will need to install the ``f5-postman-workflows`` framework into
+   Postman:
 
-BIG-IP API Authentication
--------------------------
+   #. Open Postman
 
-.. code-block:: rest
-    :caption: POST
-    :name: API auth
+   #. Click the 'Import' button
 
-    https://{{big_ip_1_mgmt}}/mgmt/shared/authn/login
+   #. Select 'Import from Link'
 
-.. code-block:: javascript
-    :caption: Postman Test
+   #. Enter the following URL in the field
+        #. ``https://github.com/6a6d/f5-pipeline/blob/master/Postman%20Collections/F5_AS3.json``
 
-.. code-block:: json
-    :caption: Body
+   #. Click the 'Import' button
 
-    {
-        "username": "admin",
-        "password": "admin",
-        "loginProviderName": "tmos"
-    }
+   #. Repeat the import process for the additional collections found below
+        #. ``https://github.com/6a6d/f5-pipeline/blob/master/Postman%20Collections/F5_DO.json``
+        #. ``https://github.com/6a6d/f5-pipeline/blob/master/Postman%20Collections/F5_TS.json``
 
-.. code-block:: javascript
-    :caption: Postman Test
-    :name: TOKEN creation
-
-    var jsonData = JSON.parse(responseBody);
-    pm.globals.set("TOKEN", jsonData.token.token);
-
-BIG-IQ API Authentication
--------------------------
-
-.. code-block:: rest
-    :caption: POST
-    :name: API auth
-
-    https://{{big_iq_mgmt}}/mgmt/shared/authn/login
-
-.. code-block:: json
-    :caption: Body
-
-    {
-        "username": "admin",
-        "password": "admin",
-        "loginProviderName": "tmos"
-    }
-
-.. code-block:: javascript
-    :caption: Postman Test
-    :name: TOKEN creation
-
-    var jsonData = JSON.parse(responseBody);
-    pm.globals.set("TOKEN", jsonData.token.token);
+   #. Ensure that each of the above collections were successfully imported.

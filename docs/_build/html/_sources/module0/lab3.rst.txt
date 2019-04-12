@@ -1,32 +1,43 @@
-.. _module0:
+F5 API Authentication
+=====================
 
-Configuring Editor Environment
-==============================
+For reference, the authentication URIs for both BIG-IP and BIG-IQ are included below.
 
-.. TODO:: List specific extensions that would be helpful.
+.. TODO:: Include curl example
 
-VS Code - Extensions
----------------------
+BIG-IP API Authentication
+-------------------------
 
+.. code-block:: rest
+    :name: API auth url
 
-
-
-
-To leverage the native IntelliSense (code completion) capabilities within VS Code and the Application Services Extension, you will need to download the correct AS3 schema file.
-
-The schema file can then be referenced in an AS3 declaration which will allow VS Code to perform code completion/schema validation functions in real time.
-
-Below is an example of a schema referance in such a declaration.
+    https://{{big_ip_mgmt}}/mgmt/shared/authn/login
 
 
 .. code-block:: json
-    :name: Schema definition for IntelliSense
+    :name: API auth payload
 
     {
-        "$schema": "file:///Users/user/src/f5-appsvcs/src/schema/as3-tool-schema.json"
+        "username": "admin",
+        "password": "admin",
+        "loginProviderName": "tmos"
     }
 
-.. NOTE::
 
-    There is a known issue with Pool_Member class inside the pool's member array.  This may show an error as VS Code doesn't seem to properly regonize the default value of addressDiscovery.  By filling in the value as "addressDiscovery": "static", the error goes away.
+BIG-IQ API Authentication
+-------------------------
 
+.. code-block:: rest
+    :name: API auth url
+
+    https://{{big_iq_mgmt}}/mgmt/shared/authn/login
+
+
+.. code-block:: json
+    :name: API auth payload
+
+    {
+        "username": "admin",
+        "password": "admin",
+        "loginProviderName": "tmos"
+    }

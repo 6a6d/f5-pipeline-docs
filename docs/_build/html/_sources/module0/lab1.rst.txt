@@ -7,8 +7,11 @@ Configuring Editor Environment
 VS Code - Extensions
 --------------------
 
-.. TODO:: List specific extensions that would be helpful.
+When using VS Code, the following extensions will be helpful but not necessary.
 
+* Prettify JSON
+* REST Client
+* Python
 
 VS Code - Schema Validate
 -------------------------
@@ -19,18 +22,20 @@ Declaration Validation
 ----------------------
 
 #. Launch VS Code and create a new file.  Ensure you save this file with the *.json extension.
-#. Referance the schema file at the top of this file
+#. Reference the schema file at the top of this file
 
-.. code-block: json
-    :name: DO Schema Referance
+
+.. code-block:: json
+    :name: DO Schema Reference for IntelliSense
 
     {
         "$schema": "https://raw.githubusercontent.com/F5Networks/f5-declarative-onboarding/master/schema/base.schema.json",
         ...
     }
 
-.. code-block: json
-    :name: AS3 Schema Referance
+
+.. code-block:: json
+    :name: AS3 Schema Reference for IntelliSense
 
     {
         "$schema": "https://raw.githubusercontent.com/F5Networks/f5-appsvcs-extension/master/dist/latest/as3-examples-3.10.0-5.collection.json",
@@ -38,25 +43,16 @@ Declaration Validation
     }
 
 
-.. code-block: json
-    :name: TS Schema Referance
+.. code-block:: json
+    :name: TS Schema Reference for IntelliSense
 
     {
         "$schema": "https://raw.githubusercontent.com/F5Networks/f5-telemetry-streaming/master/src/nodejs/schema/base_schema.json",
         ...
     }
 
-Below is an example of a schema referance in such a declaration.
-
-
-.. code-block:: json
-    :name: Schema definition for IntelliSense
-
-    {
-        "$schema": "file:///Users/user/src/f5-appsvcs/src/schema/as3-tool-schema.json"
-    }
 
 .. NOTE::
 
-    There is a known issue with Pool_Member class inside the pool's member array.  This may show an error as VS Code doesn't seem to properly regonize the default value of addressDiscovery.  By filling in the value as "addressDiscovery": "static", the error goes away.
+    There is a known issue with Pool_Member class inside the pool's member array.  This may show an error as VS Code doesn't seem to properly recognize the default value of addressDiscovery.  By filling in the value as "addressDiscovery": "static", the error goes away.
 

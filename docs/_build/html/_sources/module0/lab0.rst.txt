@@ -1,34 +1,28 @@
-.. _module0:
+Code Repository
+===============
 
-Code Repository Layout
-======================
+# Clone the below github repository before begging the lab.
+    # ``https://github.com/6a6d/f5-pipeline``
 
-.. TODO:: List specific extensions that would be helpful.
+Repository Layout
+-----------------
 
-Git Repo
---------
+The layout for this lab's repository can be found below as well as a brief description for each folder.
 
-This lab's code repository is laid out below.
+* ansible
+* deploy
+* docker
+    * as3-do
+    * pipeline
+    * telemetry
+    * toolbox
+* examples
+    * application-services
+    * declarative-onboarding
+    * telemetry-streaming
+* Postman Collections
+* scripts
+* toolchain
+* gitlab-ci.yml
 
-
-
-
-
-To leverage the native IntelliSense (code completion) capabilities within VS Code and the Application Services Extension, you will need to download the correct AS3 schema file.
-
-The schema file can then be referenced in an AS3 declaration which will allow VS Code to perform code completion/schema validation functions in real time.
-
-Below is an example of a schema referance in such a declaration.
-
-
-.. code-block:: json
-    :name: Schema definition for IntelliSense
-
-    {
-        "$schema": "file:///Users/user/src/f5-appsvcs/src/schema/as3-tool-schema.json"
-    }
-
-.. NOTE::
-
-    There is a known issue with Pool_Member class inside the pool's member array.  This may show an error as VS Code doesn't seem to properly regonize the default value of addressDiscovery.  By filling in the value as "addressDiscovery": "static", the error goes away.
-
+.. TODO:: Brief description of each folder
