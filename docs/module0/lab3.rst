@@ -1,6 +1,8 @@
 F5 API Authentication
 =====================
 
+.. Note:: This page may move to an appendix
+
 For reference, the authentication URIs for both BIG-IP and BIG-IQ are included below.
 
 .. TODO:: Include curl example

@@ -2,14 +2,14 @@ Declarative Onboarding
 ======================
 
 
-.. TODO:: Include DO refernces and graphics as necessary
+.. TODO:: Include DO references and graphics as necessary
 
 
 Initial BIG-IP Configurations
 -----------------------------
 Currently, the BIG-IPs (LTM 1, LTM 2 and GTM) are not licensed and have just a single interface configured.
 
-Please referance the Lab Topology above and ensure the BIG-IPs are configured accordingly.
+Please reference the Lab Topology above and ensure the BIG-IPs are configured accordingly.
 
 Using your favorite editor (i.e. VS Code), build a body to send to the Declarative Onboarding API request.
 
@@ -17,10 +17,10 @@ Each BIG-IP should have a seperate onboarding definition and these should be com
 
 You will need to configure the below items on each BIG-IP.
 
-#. NTP Server
-#. DNS Server
-#. User name and password
-#. BIG-IP banner
+- NTP Server
+- DNS Server
+- User name and password
+- BIG-IP banner
 
 You *WILL NOT* have license or configure the self-IPs/VLANs for the BIG-IPs.
 
@@ -37,9 +37,9 @@ Using the tool of your choice (i.e. VS Code, VIM, Postman, GitLab Web IDE) creat
 
 #. Use the below example DO declaration as a template for configuring the BIG-IP.
 #. Replace the REST **{{variables}}** with the appropriate value.  Use the below standard values in your definition for each BIG-IP as these will not change between device.
-    * NTP Server: time.apple.com
-    * DNS Server: 8.8.8.8
-    * Timezone: CST
+    - NTP Server: time.apple.com
+    - DNS Server: 8.8.8.8
+    - Timezone: CST
 #. Validate the JSON payload using like jsonlint.com
 #. Save the configuration before moving forward to Lab 2.
 
@@ -52,13 +52,6 @@ Below is an example onboarding definition.  In this example, the definition has 
 .. code-block:: rest
     :name: Onboarding Definition
 
-    @bigip_mgmt = ltm1.lab.local
-
-    ###
-
-    POST https://{{bigip_mgmt}}/mgmt/shared/declarative-onboarding
-    Authorization: Basic admin admin
-    Content-Type: application/json
     {
         "declaration": {
             "schemaVersion": "1.0.0",
@@ -91,7 +84,7 @@ Below is an example onboarding definition.  In this example, the definition has 
                 },
                 "myProvisioning": {
                     "class": "Provision",
-                    "ltm": "nominal"
+                    "{{module}}": "nominal"
                 }
                 "dbvars": {
                     "class": "DbVariables",

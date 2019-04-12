@@ -2,32 +2,26 @@ Application Services Extension (AS3)
 ====================================
 
 
-.. TODO:: Include DO references and graphics as necessary
+.. TODO:: Include AS3 references and graphics as necessary
 
 
 Building the AS3 Service Definition
 -----------------------------------
 #. Use the below example AS3 declaration as a template for configuring a generic HTTP service.
 #. Replace the REST **{{variables}}** with an appropriate value.
-#. Validate the JSON payload using like jsonlint.com
+#. Validate the JSON payload
+    - JSON linter such as `JSONLint <https://jsonlint.com/>`_
+    - Native VS Code fuctionality
+
 #. Save the configuration as it will be used later to reconfigure the service.
 
 
 Example AS3 Declaration
 -----------------------
-Below is an example of a generic HTTP based service definition for AS3.
+Below is generic service definition for AS3.
 
-.. code-block:: rest
-    :caption: POST
+.. code-block:: json
     :name: Generic service definition
-
-    @bigip_mgmt = ltm1.lab.local
-
-    ###
-
-    POST https://{{bigip_mgmt}}/mgmt/shared/declarative-onboarding
-    Authorization: Basic admin admin
-    Content-Type: application/json
 
     {
         "class": "AS3",

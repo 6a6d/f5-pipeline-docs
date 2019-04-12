@@ -11,13 +11,6 @@ The definition will be sent to the DO container and then directed at a target BI
 .. code-block:: rest
     :name: Onboarding Definition
 
-    @do_container = localhost:8080
-
-    ###
-
-    POST http://{{do_container}}/mgmt/shared/declarative-onboarding
-    Content-Type: application/json
-
     {
         "class": "DO",
         "targetHost": "{{big-ip}}",
@@ -29,10 +22,13 @@ The definition will be sent to the DO container and then directed at a target BI
             "schemaVersion": "1.0.0",
             ....
 
-#. Modify the DO definitions previously sent to each BIG-IP with changes outlined below
-    #. ```POST https://{{bigip_mgmt}}/mgmt/shared/declarative-onboarding```
-#. Repeat the above steps to configure the additional BIG-IPs as outlined below.
-#. Log into each BIG-IP and validate that configurations.
+
+1. Modify the DO definitions previously sent to each BIG-IP with changes outlined below
+
+    - ``POST https://{{bigip_mgmt}}/mgmt/shared/declarative-onboarding``
+
+2. Repeat the above steps to configure the additional BIG-IPs as outlined below.
+3. Log into each BIG-IP and validate that configurations.
 
 =======   ===============  =========  =============
 BIG-IP    Host Name        Modules    Banner Color
@@ -47,12 +43,14 @@ GMT       gtm.lab.local    gtm        red
 .. code-block:: json
     :name: Onboarding Definition
 
-{
-    "result": {
-        "class": "Result",
-        "code": 202,
-        "status": "RUNNING",
-        "message": "processing",
-        "errors": []
-    },
-    ....
+    {
+        "result": {
+            "class": "Result",
+            "code": 202,
+            "status": "RUNNING",
+            "message": "processing",
+            "errors": []
+        },
+        ....
+    }
+
