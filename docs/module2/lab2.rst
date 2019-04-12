@@ -1,5 +1,5 @@
-Service Deployments with AS3
-============================
+Direct to BIG-IP AS3 Service Deployments
+========================================
 
 
 Deploy the AS3 Service Definition
