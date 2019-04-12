@@ -82,7 +82,7 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-html_theme_path = ["docs/_themes/"]
+html_theme_path = ["_themes/"]
 html_theme = 'f5_sphinx_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
