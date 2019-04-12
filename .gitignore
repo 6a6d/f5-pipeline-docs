@@ -7,8 +7,11 @@ dmypy.json
 .pyre/
 
 # Sphynx
-_build/*
+docs/_build/*
 python/*
 
 # VS Code
 .vscode
+
+# misc
+.DS_Store
