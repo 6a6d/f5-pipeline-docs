@@ -1,24 +1,24 @@
+.. _selfBuilt:
+
 Self-Built Environment
-----------------------
+======================
 
 .. TODO:: Review for accuracy
 
-.. NOTE:: Due to the variability of self-built environments we cannot guarantee
-   that you will be able to complete the class successfully.
+.. NOTE:: Due to the variability of self-built environments your milage may vary.
 
 If you are building your own lab environment please complete the following
 steps and pre-requisites first:
 
-#. Your network configuration matches the topology in the :ref:`lab-topology`
+#. Your network configuration matches or is similar to the topology in the :ref:`lab-topology`
 
-#. Ensure your BIG-IP devices are licensed and have the following modules
+#. Ensure your BIG-IP devices are licensed and have at least the following modules
    provisioned:
 
    - LTM
    - GMT
-   - AFM
 
-#. Your Tool Box server can be built two ways:
+#. Your Tool Box server can be built two ways
 
    #. Build or reuse your own instance.  If should have the following services
       installed and running:
@@ -40,8 +40,7 @@ steps and pre-requisites first:
    - Google Chrome - https://google.com/chrome
    - VS Code - https://code.visualstudio.com/download
 
-#. You will need to install the ``f5-postman-workflows`` framework into
-   Postman:
+#. You will need to install several Postman Collections and an Environment before proceeding with the lab.
 
    #. Open Postman
 
@@ -49,23 +48,13 @@ steps and pre-requisites first:
 
    #. Select 'Import from Link'
 
-   #. Enter ``https://raw.githubusercontent.com/0xHiteshPatel/f5-postman-workflows/master/F5_Postman_Workflows.postman_collection.json``
-      in the field
+   #. Enter the following URL in the field ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5_AS3.json``
 
    #. Click the 'Import' button
 
-   #. Navigate to your Postman Collections
+   #. Repeat the import process for the additional collections and the environment found below
+        #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5_DO.json``
+        #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5_TS.json``
+        #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/Auth.json``
+        #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/_F5-pipeline-env.json``
 
-   #. Expand the 'F5_Postman_Workflows' collection
-
-   #. Expand the 'Install' folder
-
-   #. Click the 'Install/Upgrade f5-postman-workflows' items
-
-   #. Click the 'Send' button
-
-   #. Verify the installation was successful by:
-
-      #. Examine the response tests and ensure the 'Install Successful' test passed
-
-      #. Examine your Postman Global Environment and look for a _f5_workflow_functions item populated with JavaScript code
