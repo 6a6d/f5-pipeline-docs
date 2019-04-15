@@ -5,6 +5,19 @@ Application Services Extension (AS3)
 .. TODO:: Include AS3 references and graphics as necessary
 
 
+Deploy a Simple HTTP Based Service
+----------------------------------
+
+After this exercise, your simple HTTP based service should look like the below.
+
+#. Tenant Name: MyWebService
+#. Service Name: WebTier
+#. Pool: HTTP based monitor
+#. Pool members:
+    #. 10.1.20.15:80
+    #. 10.1.20.16:80
+
+
 Building the AS3 Service Definition
 -----------------------------------
 #. Use the below example AS3 declaration as a template for configuring a generic HTTP service.
