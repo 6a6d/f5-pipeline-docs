@@ -1,5 +1,5 @@
-Telemetry Streaming (TS)
-========================
+TS Configuration
+================
 
 
 Deploy the TS Service Definition

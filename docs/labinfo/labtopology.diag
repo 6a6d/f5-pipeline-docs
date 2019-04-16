@@ -23,7 +23,7 @@ nwdiag {
             // label = "Management";
             // color = "#27B331";
             color = "#6CDB7A";
-            "Windows\nJumphost" [address = "10.1.1.250"];
+            "Windows\nJumphost" [address = "10.1.1.14"];
       }
 
   }
