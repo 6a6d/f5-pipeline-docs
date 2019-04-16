@@ -66,6 +66,13 @@ components:
      - ``admin/admin``
        ``root/default``
 
+   * - BIG-IQ
+     - 10.1.1.6
+     - **External:** 10.1.10.6
+       **Internal:** 10.1.20.6
+     - ``admin/admin``
+       ``root/default``
+       
    * - Linux Tool Box
      - 10.1.1.10
      - **External:** 10.1.10.10
@@ -80,7 +87,6 @@ components:
      - 10.1.1.250
      - **External:** 10.1.10.250
      - ``f5demo/purple123``
-
 
 .. toctree::
    :maxdepth: 2
