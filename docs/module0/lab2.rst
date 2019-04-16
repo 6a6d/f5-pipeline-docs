@@ -1,29 +1,29 @@
 Postman Configuration
 =====================
 
-If not installed already, ensure that Postman 7.x is available on your local machine.
+.. Note:: The Postman Collections necessary for this lab have already been imported into the Windows Jumpbox host.
 
-You will need to import the Postman collections for this lab in order to proceed.
+If you wish to use your local machine instead of the Jumpbox, ensure that Postman 7.x has been installed.
+
+You will need to import the Postman Collections and environment found in the repository before proceeding.
 
 Importing Postman Collections
 -----------------------------
 
-#. You will need to install the ``f5-postman-workflows`` framework into
-   Postman:
+#. Open Postman
 
-   #. Open Postman
+#. Click the 'Import' button
 
-   #. Click the 'Import' button
+#. Select 'Import from Link'
 
-   #. Select 'Import from Link'
+#. Enter the following URL in the field ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5_AS3.json``
 
-   #. Enter the following URL in the field
-        #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5-AS3.json``
+#. Click the 'Import' button
 
-   #. Click the 'Import' button
+#. Repeat the import process for the additional collections and the environment found below
+     #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5_DO.json``
+     #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5_TS.json``
+     #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/Auth.json``
+     #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/_F5-pipeline-env.json``
 
-   #. Repeat the import process for the additional collections found below
-        #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5-DO.json``
-        #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5-TS.json``
-
-   #. Ensure that each of the above collections were successfully imported.
+#. Ensure that each of the above collections were successfully imported.

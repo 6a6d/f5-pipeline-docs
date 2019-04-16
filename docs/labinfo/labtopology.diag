@@ -7,33 +7,37 @@ nwdiag {
             // label = "BIG-IP";
             // color = "#CB222F";
             color = "#E66675";
-            "BIG-IP DEV" [address = "10.1.1.5"];
-            "BIG-IP PROD" [address = "10.1.1.15"];
+            "BIG-IP LTM" [address = "10.1.1.4"];
+            "BIG-IP GTM" [address = "10.1.1.5"];
+            "BIG-IQ Console" [address = "10.1.1.6"];
+            "BIG-IQ DCD" [address = "10.1.1.7"];
       }
       group compute {
             // label = "Compute";
             // color = "#2370B2";
             color = "#5FA5CC";
             "Linux\nTool Box" [address = "10.1.1.10"];
+            "Linux\nWeb Server" [address = "10.1.1.15"];
       }
       group mgmt {
             // label = "Management";
             // color = "#27B331";
             color = "#6CDB7A";
-            "Windows\nJumphost" [address = "10.1.1.250"];
+            "Windows\nJumphost" [address = "10.1.1.14"];
       }
 
   }
   network Internal {
       address = "10.1.20.0/24";
-      "BIG-IP DEV" [address = "10.1.20.5"];
-      "BIG-IP PROD" [address = "10.1.20.15"];
-      "Linux\nTool Box" [address = "10.1.20.10"];
+      "BIG-IP LTM" [address = "10.1.20.4"];
+      "BIG-IP GTM" [address = "10.1.20.5"];
+      "Linux\nWeb Server" [address = "10.1.20.15"];
   }
   network External {
       address = "10.1.10.0/24";
-      "BIG-IP DEV" [address = "10.1.10.5"];
-      "BIG-IP PROD" [address = "10.1.10.15"];
+      "BIG-IP LTM" [address = "10.1.10.5"];
+      "BIG-IP GTM" [address = "10.1.10.15"];
+      "Linux\nTool Box" [address = "10.1.10.10"];
       "Windows\nJumphost" [address = "10.1.10.250"];
   }
 }

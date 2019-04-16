@@ -1,5 +1,5 @@
 F5 Unified Demo Framework (UDF)
--------------------------------
+===============================
 
 .. NOTE:: This environment is currently available for F5 employees only
 
@@ -14,7 +14,7 @@ Determine how to start your deployment:
   Blueprint and :guilabel:`Start` it.
 
 Connecting to the Environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 To connect to the lab environment we will use a Remote Desktop Protocol
 client to connect to the Jumphost.

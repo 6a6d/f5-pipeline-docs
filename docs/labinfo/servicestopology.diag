@@ -1,0 +1,37 @@
+nwdiag {
+  default_fontsize = 12;
+  span_width=65;
+  network Management {
+      address = "10.1.1.0/24";
+      group cicd {
+            // label = "CI/CD";
+            // color = "#CB222F";
+            color = "#E66675";
+            "GitLab" [address = "10.1.1.10:80"];
+      }
+      group telemetry {
+            // label = "Telemetry";
+            // color = "#2370B2";
+            color = "#5FA5CC";
+            "Grafana" [address = "10.1.1.10:3000"];
+            "Graphite" [address = "10.1.1.10:8080"];
+            "BIG-IQ" [address = "10.1.1.6:443"];
+      }
+      group api {
+            // label = "API Services";
+            // color = "#27B331";
+            color = "#6CDB7A";
+            "AS3 Container" [address = "10.1.1.10:8000"];
+            "DO Container" [address = "10.1.1.10:8001"];
+      }
+
+  }
+  network Internal {
+      address = "10.1.20.0/24";
+      "Linux\nWeb Server" [address = "10.1.20.15-20:80"];
+  }
+  network External {
+      address = "10.1.10.0/24";
+      "Traffic\nGenerator" [address = "10.1.10.10"];
+  }
+}

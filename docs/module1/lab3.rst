@@ -34,7 +34,6 @@ The definition will be sent to the DO container and then directed at a target BI
 BIG-IP    Host Name        Modules    Banner Color
 =======   ===============  =========  =============
 LTM1      ltm1.lab.local   ltm, afm   blue
-LTM2      ltm2.lab.local   ltm, asm   green
 GMT       gtm.lab.local    gtm        red
 =======   ===============  =========  =============
 
