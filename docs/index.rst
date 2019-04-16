@@ -8,3 +8,7 @@ This training will serve as a introduction to F5's A&O Toolchain.  Using the inc
     :maxdepth: 2
     :caption: Contents:
     :glob:
+
+    labinfo/labinfo
+    module*/lab*
+    referance/lab*
