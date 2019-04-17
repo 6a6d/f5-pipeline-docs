@@ -1,19 +1,18 @@
 Application Services Extension (AS3)
 ====================================
 
-
 Deploy a Simple HTTP Based Service
 ----------------------------------
 
 After this exercise, your simple HTTP based service should look like the below.
 
 #. Tenant Name: MyWebService
-#. Service Name: WebTier
+#. Service Name: ServiceName
+#. Application Name: AppName
 #. Pool: HTTP based monitor
 #. Pool members:
-    #. 10.1.20.15:80
-    #. 10.1.20.16:80
-
+    #. 10.1.20.11:80
+    #. 10.1.20.12:80
 
 Building the AS3 Service Definition
 -----------------------------------
@@ -24,7 +23,6 @@ Building the AS3 Service Definition
     - Native VS Code fuctionality
 
 #. Save the configuration as it will be used later to reconfigure the service.
-
 
 Example AS3 Declaration
 -----------------------
@@ -46,8 +44,8 @@ Below is generic service definition for AS3.
                 "class": "Tenant",
                 "{{service_name}}_app": {
                     "class": "Application",
-                    "template": "generic",
-                    "{{service_name}}_service": {
+                    "template": "http",
+                    "ServiceMain": {
                         "class": "Service_TCP",
                         "virtualAddresses": [
                             "{{vip}}"
@@ -65,7 +63,7 @@ Below is generic service definition for AS3.
                                 "servicePort": {{virtual_port}},
                                 "serverAddresses": [
                                     "{{node1_ip}}",
-                                    "{{node2_ip}}",
+                                    "{{node2_ip}}"
                                 ]
                             }
                         ]

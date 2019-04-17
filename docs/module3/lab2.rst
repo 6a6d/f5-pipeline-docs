@@ -1,7 +1,6 @@
 TS Configuration
 ================
 
-
 Deploy the TS Service Definition
 --------------------------------
 
@@ -15,7 +14,6 @@ Using the tool of your choice (i.e. VS Code, Postman, GitLab Web IDE + pipeline)
 
 .. Note:: Telemetry data may take 2-3 minutes to populate the Graphite dashboards.
 
-
 Reconfigure TS
 --------------
 
@@ -25,7 +23,6 @@ To monitor a single tenant, you can modify the existing TS definition and refine
 #. Log into the Graphite console and validate that metrics are still being collected from a a single tenant.
 
 .. Hint:: Modify the previously used  TS definition instead of creating a new one.
-
 
 Example of Tenant Specific TS Declaration
 -----------------------------------------

@@ -1,14 +1,12 @@
 Telemetry Streaming (TS)
 ========================
 
-
 Building the TS Service Definition
 -----------------------------------
 #. Use the below example TS declaration as a template for configuring a generic HTTP service.
 #. Replace the REST **{{variables}}** with an appropriate value.
 #. Validate the JSON payload using like jsonlint.com
 #. Save the configuration as it will be used later to reconfigure the service.
-
 
 .. Note:: The below TS definition will stream metrics from all configured tenants.
 

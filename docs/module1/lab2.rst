@@ -1,7 +1,6 @@
 BIG-IP Configuration with DO
 =============================
 
-
 Using the tool of your choice (i.e. VS Code, Postman, GitLab Web IDE + pipeline) configure the BIG-IP using the previously created service definition.
 
 1. Send definition to the BIG-IP.
