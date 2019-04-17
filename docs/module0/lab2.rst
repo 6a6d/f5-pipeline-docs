@@ -1,10 +1,7 @@
-.. _module0:
-
 Configuring Editor Environment
 ==============================
 
 .. Note:: VS Code has already been installed and configured on the Windows Jumpbox.
-
 
 What is Visual Studio Code?
 ---------------------------
@@ -14,7 +11,6 @@ Visual Studio Code (VS Code) is a code editor redefined and optimized for buildi
 VS Code can be customized by installing extentions that support new languages, themes, and connect to additional services (e.g. AWS or Azure).
 
 Git it built-into Visual Studio Code which makes the platform ideal for use in a SuperNetOps/IaC environment.
-
 
 VS Code - Extensions
 --------------------
@@ -26,12 +22,10 @@ When using VS Code, the following extensions will be helpful but not necessary.
 * YAML
 * Python
 
-
 VS Code - Schema Validate
 -------------------------
 
 In order to leverage the native IntelliSense (code completion) capabilities within VS Code a schema file will need to be referanced in a given declaration.  Once the schema is referanced, VS Code will autocomplete keywords in real time.
-
 
 Service Definition Validation
 -----------------------------
@@ -43,7 +37,6 @@ When creating a JSON file, such as an AS3 Service Definition, the schema can be 
 #. Add one of the below references to the schema at the top of the file.
 
 #. VS Code will not provide schema validation for the service definition.
-
 
 .. code-block:: json
     :name: DO Schema Reference for IntelliSense

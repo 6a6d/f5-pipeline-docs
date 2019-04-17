@@ -13,7 +13,6 @@ BIG-IP API Authentication
 
     https://{{big_ip_mgmt}}/mgmt/shared/authn/login
 
-
 .. code-block:: json
     :name: API auth payload
 
@@ -22,7 +21,6 @@ BIG-IP API Authentication
         "password": "admin",
         "loginProviderName": "tmos"
     }
-
 
 BIG-IQ API Authentication
 -------------------------

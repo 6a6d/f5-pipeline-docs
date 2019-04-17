@@ -1,7 +1,6 @@
 Initial BIG-IP Configurations
 =============================
 
-
 Currently, the BIG-IPs (LTM 1, LTM 2 and GTM) are not licensed and have just a single interface configured.
 
 Please reference the Lab Topology above and ensure the BIG-IPs are configured accordingly.
@@ -21,12 +20,10 @@ You will need to configure the below items on each BIG-IP.
 
 You *WILL NOT* have license or configure the self-IPs/VLANs for the BIG-IPs.
 
-
 DO Configuration Requirements
 -----------------------------
 
 The BIG-IPs in this lab environment have already been configured with VLANs, self-ips, and licenses.  The below configuration items have not been configured on each BIG-IP and will need to be prior to continuing with the lab.
-
 
 Building the DO Configuration
 -----------------------------
@@ -39,7 +36,6 @@ Using the tool of your choice (i.e. VS Code, VIM, Postman, GitLab Web IDE) creat
     - Timezone: CST
 #. Validate the JSON payload using like jsonlint.com
 #. Save the configuration before moving forward to Lab 2.
-
 
 Example Onboarding Declaration
 ------------------------------

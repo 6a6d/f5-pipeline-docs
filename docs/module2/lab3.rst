@@ -1,11 +1,9 @@
 BIG-IQ AS3 Service Deployments
 ==============================
 
-
 A previously deployed AS3 service definition can be re-deployed through BIG-IQ in order to create a per-application dashboard for that tenant.
 
 .. Note:: Before starting, make sure that you manually add the BIG-IP as a device in BIG-IQ.
-
 
 Deploy the AS3 Service Definition
 ---------------------------------
@@ -23,7 +21,6 @@ Deploy the AS3 Service Definition
 
 # GET the following endpoint on the BIG-IQ and append the previous deployments UUID.
     * ``https://{{big_iq_mgmt}}/mgmt/shared/appsvcs/task/{{UUID}}``
-
 
 Example Target Host in BIG-IQ AS3 Definintion
 ---------------------------------------------

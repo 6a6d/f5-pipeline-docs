@@ -1,7 +1,6 @@
 Using the DO Container and BIG-IP
 ==================================
 
-
 Using the tool of your choice (i.e. VS Code, Postman, GitLab Web IDE + pipeline) configure the BIG-IP using the previously created service definition.
 
 The definition will be sent to the DO container and then directed at a target BIG-IP for deployment.  In order to accomplish this, a ```targetHost``` must be defined in the service definition.
@@ -21,7 +20,6 @@ The definition will be sent to the DO container and then directed at a target BI
             "class": "Device",
             "schemaVersion": "1.0.0",
             ....
-
 
 1. Modify the DO definitions previously sent to each BIG-IP with changes outlined below
 

@@ -7,7 +7,6 @@ The development environment for this lab is using a standard set of applications
 - `VS Code`_
 - Postman_
 
-
 .. _`VS Code`: https://code.visualstudio.com/
 .. _Postman: https://www.getpostman.com/
 

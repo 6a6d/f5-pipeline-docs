@@ -1,7 +1,6 @@
 TS Validation
 =============
 
-
 Using Graphite
 --------------
 
