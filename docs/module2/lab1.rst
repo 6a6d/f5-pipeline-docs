@@ -2,9 +2,6 @@ Application Services Extension (AS3)
 ====================================
 
 
-.. TODO:: Include AS3 references and graphics as necessary
-
-
 Deploy a Simple HTTP Based Service
 ----------------------------------
 

@@ -13,7 +13,6 @@ Using the tool of your choice (i.e. VS Code, Postman, GitLab Web IDE + pipeline)
 
 .. TODO:: Add Graphite console pic with TS data
 
-
 .. Note:: Telemetry data may take 2-3 minutes to populate the Graphite dashboards.
 
 

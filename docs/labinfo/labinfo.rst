@@ -1,7 +1,7 @@
 Lab Information
 ===============
 
-.. Note:: All work for this lab will be performed exclusively from the Jumphost.  No installation or interaction with your local system is required.  If you choose to use your location machine for lab work, please follow the instructions in the selfBuilt_ section.
+.. Note:: All work for this lab can be performed exclusively from the Windows Jumphost.  No installation or interaction with your local system is required.  If you choose to use your location machine for lab work, please follow the instructions in the selfBuilt_ section.
 
 Lab Topology
 ------------
@@ -10,7 +10,7 @@ The network topology implemented for this lab is very simple as the emphasis is 
 
 The following components have been included in your lab environment:
 
--  2 x BIG-IPs (v13.1.x)
+-  1 x BIG-IPs (v13.1.x)
 -  1 x BIG-IQ (v6.1)
 -  1 x BIG-IQ DCD
 -  1 x Linux Tool Box
@@ -88,6 +88,10 @@ components:
      - **External:** 10.1.10.250
      - ``f5demo/purple123``
 
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
+
+   services
+   udf

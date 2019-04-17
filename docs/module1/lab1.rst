@@ -1,12 +1,10 @@
-Declarative Onboarding
-======================
+Initial BIG-IP Configurations
+=============================
 
 
 .. TODO:: Include DO references and graphics as necessary
 
 
-Initial BIG-IP Configurations
------------------------------
 Currently, the BIG-IPs (LTM 1, LTM 2 and GTM) are not licensed and have just a single interface configured.
 
 Please reference the Lab Topology above and ensure the BIG-IPs are configured accordingly.
@@ -17,9 +15,11 @@ Each BIG-IP should have a seperate onboarding definition and these should be com
 
 You will need to configure the below items on each BIG-IP.
 
+- License (pool from BIG-IQ)
 - NTP Server
 - DNS Server
 - User name and password
+- Provisioning module
 - BIG-IP banner
 
 You *WILL NOT* have license or configure the self-IPs/VLANs for the BIG-IPs.

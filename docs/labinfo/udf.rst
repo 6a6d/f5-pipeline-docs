@@ -3,40 +3,23 @@ F5 Unified Demo Framework (UDF)
 
 .. NOTE:: This environment is currently available for F5 employees only
 
-Determine how to start your deployment:
-
-- **Official Events (ISC, SSE Summits):**  Please follow the
-  instructions given by your instructor to join the UDF Course.
-
-- **Self-Paced/On Your Own:** Login to UDF,
-  :guilabel:`Deploy` the
-  ``Programmability Class 1: Introduction to Automation & Orchestration``
-  Blueprint and :guilabel:`Start` it.
 
 Connecting to the Environment
 -----------------------------
 
-To connect to the lab environment we will use a Remote Desktop Protocol
-client to connect to the Jumphost.
+To connect to the lab environment we will use an RDP client to connect to the Windows Jump Box.
 
 .. NOTE:: We recommend that students open this lab guide on their Jumphost
    using the Chrome web browser.  The browser is configured to open the lab
    guide as it's start page.
 
-.. preserving for future use
-
   The lab environment provides two access methods to the Jumphost:
 
   - RDP Connection using an RDP Client
-  - HTML5 Browser-based VNC Connection using noVNC
 
-    - Chrome
-    - Firefox
-    - Safari
-    - EDGE
 
 Connect using RDP
-^^^^^^^^^^^^^^^^^
+-----------------
 
 #. In the UDF navigate to your :guilabel:`Deployments`
 
@@ -71,30 +54,6 @@ Connect using RDP
 
    - Start: :ref:`module0`
 
-.. preserving for future use
-
-  Connect using an HTML5 Browser
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  #. In the UDF navigate to your :guilabel:`Deployments`
-
-  #. Click the :guilabel:`Details` button for your Deployment
-
-  #. Click the :guilabel:`Components` tab
-
-  #. Find the ``Linux Jumphost`` Component and click the the :guilabel:`Access`
-     button.  Then click the :guilabel:`NOVNC` option.  A new browser window/tab
-     will be opened.
-
-  #. In the new browser window/tab click the :guilabel:`Connect` button followed
-     by the :guilabel:`Send Password` button.  You should now be connected.  If
-     you have any problems please ask your instructor for help
-
-  #. Select how you would like to continue:
-
-     - Start: :ref:`module0`
-
-.. _lab-udf-hidpi:
 
 Using HiDPI Displays (RDP & Windows)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -128,6 +87,7 @@ Resize your display (Windows 10) - RECOMMENDED
 #. Select how you would like to continue:
 
    - Start: :ref:`module0`
+
 
 Use RDP Zoom
 ^^^^^^^^^^^^
