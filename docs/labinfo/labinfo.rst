@@ -42,37 +42,30 @@ components:
      - 10.1.1.4
      - **Internal:** 10.1.20.4
        **External:** 10.1.10.4
-     - ``admin/admin``
+     - ``admin/purple123``
        ``root/default``
 
    * - BIG-IP GTM
      - 10.1.1.5
      - **Internal:** 10.1.20.5
        **External:** 10.1.10.5
-     - ``admin/admin``
+     - ``admin/purple123``
        ``root/default``
 
    * - BIG-IQ Console
      - 10.1.1.6
      - **Internal:** 10.1.20.6
        **External:** 10.1.10.6
-     - ``admin/admin``
+     - ``admin/purple123``
        ``root/default``
 
    * - BIG-IQ DCD
      - 10.1.1.7
      - **Internal:** 10.1.20.7
        **External:** 10.1.10.7
-     - ``admin/admin``
+     - ``admin/purple123``
        ``root/default``
 
-   * - BIG-IQ
-     - 10.1.1.6
-     - **External:** 10.1.10.6
-       **Internal:** 10.1.20.6
-     - ``admin/admin``
-       ``root/default``
-       
    * - Linux Tool Box
      - 10.1.1.10
      - **External:** 10.1.10.10
@@ -80,11 +73,11 @@ components:
 
    * - Linux Web Server
      - 10.1.1.15
-     - **Internal:** 10.1.20.15
+     - **Internal:** 10.1.20.11
      - ``ubuntu/ubuntu``
 
    * - Windows Jumphost
-     - 10.1.1.250
+     - 10.1.1.
      - **External:** 10.1.10.250
      - ``f5demo/purple123``
 

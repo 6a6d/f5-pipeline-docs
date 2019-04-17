@@ -2,9 +2,6 @@ Initial BIG-IP Configurations
 =============================
 
 
-.. TODO:: Include DO references and graphics as necessary
-
-
 Currently, the BIG-IPs (LTM 1, LTM 2 and GTM) are not licensed and have just a single interface configured.
 
 Please reference the Lab Topology above and ensure the BIG-IPs are configured accordingly.
