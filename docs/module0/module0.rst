@@ -16,4 +16,5 @@ The development environment for this lab is using a standard set of applications
    :maxdepth: 1
    :glob:
 
-   lab*
+   lab2
+   lab3
