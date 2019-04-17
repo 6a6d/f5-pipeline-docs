@@ -21,8 +21,8 @@ Importing Postman Collections
 #. Click the 'Import' button
 
 #. Repeat the import process for the additional collections and the environment found below
-     #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5_DO.json``
-     #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5_TS.json``
+     #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5-DO.json``
+     #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5-TS.json``
      #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/Auth.json``
      #. ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/_F5-pipeline-env.json``
 
