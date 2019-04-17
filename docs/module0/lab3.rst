@@ -16,7 +16,7 @@ Importing Postman Collections
 
 #. Select 'Import from Link'
 
-#. Enter the following URL in the field ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5_AS3.json``
+#. Enter the following URL in the field ``https://raw.githubusercontent.com/6a6d/f5-pipeline/master/postman/F5-AS3.json``
 
 #. Click the 'Import' button
 
