@@ -11,10 +11,4 @@ Using the tool of your choice (i.e. VS Code, Postman, GitLab Web IDE + pipeline)
     * ```POST https://{{big_ip_mgmt}}/mgmt/shared/telemetry/declare```
 #. Log into the Graphite console and validate that metrics are being sent from the BIG-IP.
 
-.. TODO:: Add Graphite console pic with TS data
-
 .. Note:: Telemetry data may take 2-3 minutes to populate the Graphite dashboards.
-
-
-Using Grafana
---------------

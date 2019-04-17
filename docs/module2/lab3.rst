@@ -1,7 +1,9 @@
 BIG-IQ AS3 Service Deployments
 ==============================
 
+
 A previously deployed AS3 service definition can be re-deployed through BIG-IQ in order to create a per-applciation dashboard for that tenant.
+
 
 Deploy the AS3 Service Definition
 ---------------------------------
@@ -42,7 +44,6 @@ Example Target Host in BIG-IQ AS3 Definintion
             },
             "{{tenant_name}}": {
     ....
-
 
 
 .. Note:: To reconfigure the BIG-IP, modify the AS3 service definition and re-post to the AS3 URI.

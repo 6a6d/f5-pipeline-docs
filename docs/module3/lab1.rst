@@ -1,8 +1,6 @@
 Telemetry Streaming (TS)
 ========================
 
-.. TODO:: Include DO references and graphics as necessary
-
 
 Building the TS Service Definition
 -----------------------------------

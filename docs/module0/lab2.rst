@@ -16,8 +16,6 @@ VS Code can be customized by installing extentions that support new languages, t
 Git it built-into Visual Studio Code which makes the platform ideal for use in a SuperNetOps/IaC environment.
 
 
-
-
 VS Code - Extensions
 --------------------
 
@@ -38,7 +36,7 @@ In order to leverage the native IntelliSense (code completion) capabilities with
 Service Definition Validation
 -----------------------------
 
-When creating a JSON file, such as an AS3 Service Defintion, the schema can be referanced allowing VS Code to provide code completion and validation services.
+When creating a JSON file, such as an AS3 Service Definition, the schema can be referanced allowing VS Code to provide code completion and validation services.
 
 #. Open an existing Service Definition using VS Code.
 
