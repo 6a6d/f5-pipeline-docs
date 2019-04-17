@@ -36,7 +36,7 @@ When creating a JSON file, such as an AS3 Service Definition, the schema can be 
 
 #. Add one of the below references to the schema at the top of the file.
 
-#. VS Code will not provide schema validation for the service definition.
+#. VS Code will now provide schema validation for the service definition.
 
 .. code-block:: json
     :name: DO Schema Reference for IntelliSense
