@@ -9,12 +9,13 @@ Using the tool of your choice (i.e. VS Code, Postman, GitLab Web IDE + pipeline)
 
 2. Repeat the above steps to configure the additional BIG-IPs as outlined below.
 
-=======   ===============  =========  =============
-BIG-IP    Host Name        Modules    Banner Color
-=======   ===============  =========  =============
-LTM1      ltm1.lab.local   ltm        red
-GMT       gtm.lab.local    gtm        green
-=======   ===============  =========  =============
+=======   ===============  =========    =============
+BIG-IP    Host Name        Modules      Banner Color
+=======   ===============  =========    =============
+LTM1      ltm1.lab.local   ltm,afm,asm  red
+LTM2      ltm2.lab.local   ltm,afm,asm  yellow
+GTM       gtm.lab.local    gtm          green
+=======   ===============  =========    =============
 
 4. **DO NOT** log into the BIG-IP to validate the configuration...that would be `cheating <https://youtu.be/a1Y73sPHKxw>`_.
 5. Use the declarative interface to determine the configuration of each BIG-IP.
