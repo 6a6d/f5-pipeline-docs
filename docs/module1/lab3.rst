@@ -28,12 +28,13 @@ The definition will be sent to the DO container and then directed at a target BI
 2. Repeat the above steps to configure the additional BIG-IPs as outlined below.
 3. Log into each BIG-IP and validate that configurations.
 
-=======   ===============  =========  =============
-BIG-IP    Host Name        Modules    Banner Color
-=======   ===============  =========  =============
-LTM1      ltm1.lab.local   ltm, afm   blue
-GMT       gtm.lab.local    gtm        red
-=======   ===============  =========  =============
+=======   ===============  ==============  =============
+BIG-IP    Host Name        Modules         Banner Color
+=======   ===============  ==============  =============
+LTM1      ltm1.lab.local   ltm, afm, asm   blue
+LTM2      ltm2.lab.local   ltm, afm, asm   yellow
+GTM       gtm.lab.local    gtm             red
+=======   ===============  ==============  =============
 
 .. Note:: If successfully submitted to the DO container you will get a 202 Accepted back.
 
