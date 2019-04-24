@@ -46,9 +46,9 @@ components:
        ``root/default``
 
    * - BIG-IP LTM2
-     - 10.1.1.8
-     - **External:** 10.1.10.8
-       **Internal:** 10.1.20.8
+     - 10.1.1.9
+     - **External:** 10.1.10.9
+       **Internal:** 10.1.20.9
      - ``admin/purple123``
        ``root/default``
 
