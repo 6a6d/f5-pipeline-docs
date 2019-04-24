@@ -33,7 +33,7 @@ Using the tool of your choice (i.e. VS Code, VIM, Postman, GitLab Web IDE) creat
 #. Replace the REST **{{variables}}** with the appropriate value.  Use the below standard values in your definition for each BIG-IP as these will not change between device.
     - NTP Server: time.apple.com
     - DNS Server: 8.8.8.8
-    - Timezone: CST
+    - Timezone: UTC
 #. Validate the JSON payload using like jsonlint.com
 #. Save the configuration before moving forward to Lab 2.
 
