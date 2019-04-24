@@ -10,7 +10,7 @@ The network topology implemented for this lab is very simple as the emphasis is 
 
 The following components have been included in your lab environment:
 
--  1 x BIG-IPs (v13.1.x)
+-  3 x BIG-IPs (v13.1.x)
 -  1 x BIG-IQ (v6.1)
 -  1 x BIG-IQ DCD
 -  1 x Linux Tool Box
@@ -38,31 +38,38 @@ components:
      - **VLAN/IP Address(es)**
      - **Credentials**
 
-   * - BIG-IP LTM
-     - 10.1.1.4
-     - **Internal:** 10.1.20.4
-       **External:** 10.1.10.4
+   * - BIG-IP LTM1
+     - 10.1.1.8
+     - **External:** 10.1.10.8
+       **Internal:** 10.1.20.8
+     - ``admin/purple123``
+       ``root/default``
+
+   * - BIG-IP LTM2
+     - 10.1.1.8
+     - **External:** 10.1.10.8
+       **Internal:** 10.1.20.8
      - ``admin/purple123``
        ``root/default``
 
    * - BIG-IP GTM
      - 10.1.1.5
-     - **Internal:** 10.1.20.5
-       **External:** 10.1.10.5
+     - **External:** 10.1.10.5
+       **Internal:** 10.1.20.5
      - ``admin/purple123``
        ``root/default``
 
    * - BIG-IQ Console
      - 10.1.1.6
-     - **Internal:** 10.1.20.6
-       **External:** 10.1.10.6
+     - **External:** 10.1.10.6
+       **Internal:** 10.1.20.6
      - ``admin/purple123``
        ``root/default``
 
    * - BIG-IQ DCD
      - 10.1.1.7
-     - **Internal:** 10.1.20.7
-       **External:** 10.1.10.7
+     - **External:** 10.1.10.7
+       **Internal:** 10.1.20.7
      - ``admin/purple123``
        ``root/default``
 
@@ -72,13 +79,17 @@ components:
      - ``ubuntu/ubuntu``
 
    * - Linux Web Server
-     - 10.1.1.15
-     - **Internal:** 10.1.20.11
+     - 10.1.1.11
+     - **Internal1:** 10.1.20.11
+       **Internal2:** 10.1.20.12
+       **Internal3:** 10.1.20.13
+       **Internal4:** 10.1.20.14
+       **Internal5:** 10.1.20.15
      - ``ubuntu/ubuntu``
 
    * - Windows Jumphost
-     - 10.1.1.
-     - **External:** 10.1.10.250
+     - 10.1.1.14
+     - **External:** 10.1.10.240
      - ``f5demo/purple123``
 
 
